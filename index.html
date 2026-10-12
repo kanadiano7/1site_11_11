@@ -1,15 +1,270 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
+
 <head>
-<title>A minha página</title>
-<body>
-    <h1>Bem-vindo ao meu website!</h1>
-    <p1>Neste site vou abordar vários temas meus, objetivos e interesses. Espero que gostem e obrigado pela visita!</p1>
-</body>
-<body>
-    <a href="galeria.html">Galeria</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="https://www.fcporto.pt/pt">Minha Vida</a>
-</body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O Meu Portefólio</title>
+
+    <link rel="stylesheet" href="style 2.css">
+
 </head>
+
+<body>
+
+<!-- Cabeçalho -->
+<header>
+    <nav>
+        <h2>O Meu Portefólio</h2>
+
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#competencias">Competências</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Apresentação -->
+<section class="hero">
+    <div>
+        <h1>Olá, eu sou <span>Kennedy Moraes</span></h1>
+
+        <p>
+            Ex-jogador do Botafogo
+        </p>
+
+        <a href="#cv" class="botao">Ver o meu CV</a>
+    </div>
+</section>
+
+
+<!-- Sobre mim -->
+<section id="sobre" class="secao">
+    <h2>Sobre mim</h2>
+
+    <p>
+        Sou o Kennedy, não curto de fazer nada que tenha a ver com a escola,
+        mas curto de vir porque saio de casa e pelo menos convive-se um bocado.
+    </p>
+</section>
+
+
+<!-- Competências -->
+<section id="competencias" class="secao fundo">
+    <h2>Competências</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Jogos</h3>
+            <p>Jogar FIFA, Fortnite e GTA.</p>
+        </div>
+
+        <div class="card">
+            <h3>Vida</h3>
+            <p>Não fumo, não bebo, meu problema é mulher.</p>
+        </div>
+
+        <div class="card">
+            <h3>Escola</h3>
+            <p>Competência de vir sem vontade de vir.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Projetos -->
+<section id="projetos" class="secao">
+    <h2>Projetos</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Banco Alimentar</h3>
+            <p>
+                Banco Alimentar no Lidl enquanto jogador profissional do botafogo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Participação no PMAT</h3>
+            <p>
+                Participei no PMAT 
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CV -->
+<section id="cv" class="secao fundo">
+
+    <h2>Curriculum Vitae</h2>
+
+    <div class="cv">
+
+        <div class="cv-cabecalho">
+
+            <h1>Kennedy Moraes</h1>
+
+            <p>Ex-jogador do Botafogo</p>
+
+            <p>
+                a116556@aeg1.pt<br>
+                967 966 073<br>
+                Gondomar, Portugal
+            </p>
+
+        </div>
+
+
+        <div class="cv-secao">
+
+            <h3>Eu</h3>
+
+            <p>
+                Odeio 1,95m, tenho lana del rey, escuto colica.
+            </p>
+
+        </div>
+
+
+        <div class="cv-secao">
+
+            <h3>Formação Académica</h3>
+
+            <h4>Curso Técnico de Gestão de Sistemas Informáticos</h4>
+            <p>ESG — 2025-presente</p>
+
+            <h4>Ciências e Tecnologias</h4>
+            <p>ESG — 2024-2025</p>
+
+        </div>
+
+
+        <div class="cv-secao">
+
+            <h3>Competências</h3>
+
+            <ul>
+                <li>Jogar FIFA</li>
+                <li>Jogar Fortnite</li>
+                <li>Jogar GTA</li>
+                <li>Ser saudável</li>
+                <li>Futebol</li>
+                <li>Altinha</li>
+            </ul>
+
+        </div>
+
+
+        <div class="cv-secao">
+
+            <h3>Experiência / Projetos</h3>
+
+            <h4>Banco Alimentar</h4>
+
+            <p>
+                Participação no Banco Alimentar no Lidl enquanto jogador
+                profissional do botafogo.
+            </p>
+
+            <h4>PMAT</h4>
+
+            <p>
+                Participação no PMAT 
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTÕES DO CV -->
+    <div class="botoes-cv">
+
+        <button onclick="mostrarCV()">
+            Mostrar / Ocultar CV
+        </button>
+
+        <!-- NOVO BOTÃO PARA ABRIR O PDF -->
+        <a href="cv.pdf" target="_blank" class="botao">
+            Entrar no Currículo PDF
+        </a>
+
+        <!-- BOTÃO PARA DESCARREGAR O PDF -->
+        <a href="cv.pdf" download class="botao">
+            Descarregar CV em PDF
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Contactos -->
+<section id="contactos" class="secao">
+
+    <h2>Contactos</h2>
+
+    <p>
+        Email:
+        <a href="mailto:a116556@aeg1.pt">
+            a116556@aeg1.pt
+        </a>
+    </p>
+
+    <p>
+        Número:
+        <a href="https://github.com/" target="_blank">
+            967966073
+        </a>
+    </p>
+
+    <p>
+        Instagram:
+        <a href="#" target="_blank">
+            notryank
+        </a>
+    </p>
+
+</section>
+
+
+<!-- Rodapé -->
+<footer>
+
+    <p>&copy; 2026 Kennedy Moraes.</p>
+
+</footer>
+
+
+<script>
+
+    function mostrarCV() {
+
+        const cv = document.querySelector(".cv");
+
+        if (cv.style.display === "none") {
+
+            cv.style.display = "block";
+
+        } else {
+
+            cv.style.display = "none";
+
+        }
+
+    }
+
+</script>
+
+</body>
 </html>
-<link rel="stylesheet" href="style.css">
